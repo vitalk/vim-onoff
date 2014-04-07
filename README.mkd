@@ -4,8 +4,12 @@ Vim onoff
 Vim has a lot of different boolean options — `cursorline`, `number`, `list`,
 `spell`, etc. Toggle them *gracefully*.
 
-Much of `onoff.vim` was extracted from my `.vimrc`. For easy usage plugin
-exposes some `<Plug>` mappings, feel free to remap it to something nice:
+Much of `onoff.vim` was extracted from my `vimrc`. Plugin provides an API to
+switch boolean options in Vim. After each turn option value shown at bottom of
+the window.
+
+For easy usage plugin exposes some `<Plug>` mappings, feel free to remap it to
+something nice:
 
 ```viml
 nmap <Leader>- <Plug>(onoff-cursorline)
