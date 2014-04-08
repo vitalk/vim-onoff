@@ -1,0 +1,57 @@
+*onoff.txt*   Turns Vim options on. Off.
+
+
+                     Reference manual by Vital Kudzelka~
+
+
+==============================================================================
+On/off Vim options.                                                    *onoff*
+
+    1. Intro.....................................|onoff-intro|
+    2. Mappings..................................|onoff-mappings|
+    3. About.....................................|onoff-about|
+    4. License...................................|onoff-license|
+
+==============================================================================
+1. Intro                                                         *onoff-intro*
+
+Vim has a lot of different |options| — |'number'|, |'spell'|, |'cursorline'|, etc.
+Plugin provides an API to turn them on/off. After each switch option value
+shown at bottom of the window.
+
+==============================================================================
+2. Mappings                                                   *onoff-mappings*
+
+Plugin exposes some |<Plug>| mappings, feel free to remap them to something
+nice:
+>
+nmap <Leader>- <Plug>(onoff-cursorline)
+nmap <Leader>h <Plug>(onoff-hlsearch)
+nmap <Leader>n <Plug>(onoff-number)
+nmap <Leader>p <Plug>(onoff-paste)
+nmap <Leader>s <Plug>(onoff-spell)
+nmap <Leader>i <Plug>(onoff-list)
+<
+
+Or map keys explicitly:
+>
+nnore | :call onoff#toggle('cursorcolumn')<cr>
+<
+
+==============================================================================
+3. About                                                         *onoff-about*
+
+My name is Vital Kudzelka. Much of |onoff| was extracted from my |vimrc|.
+
+For any bugs and suggestions create a issue on GitHub
+
+https://github.com/vitalk/vim-onoff/issues/
+
+or email me on mailto:vital.kudzelka@gmail.com
+
+==============================================================================
+4. License                                                     *onoff-license*
+
+Distributed under the same terms as Vim itself. See |license| for details.
+
+vim:tw=78:sw=4:ft=help:norl:
