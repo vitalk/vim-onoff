@@ -34,7 +34,8 @@ nnore <Leader>i :Onoff list<cr>
 <
 
 If you want to use :Onoff command explicitly, it's possible to use command
-without capitalization, e.g. :onoff abbreviation is available.
+without capitalization, e.g. :onoff abbreviation is available. Abbreviation
+works only when 'onoff' is the first word on the command line.
 
                                                                       *:Onoff*
                                                                       *:onoff*

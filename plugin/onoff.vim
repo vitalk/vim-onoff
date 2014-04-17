@@ -15,6 +15,6 @@ let g:loaded_onoff = 1
 command! -nargs=1 Onoff
       \ call onoff#toggle(<f-args>)
 
-cabbr onoff Onoff
+cabbr onoff <c-r>=(getcmdtype() == ':' && getcmdpos() == 1 ? 'Onoff' : 'onoff')<cr>
 
 " }}}
