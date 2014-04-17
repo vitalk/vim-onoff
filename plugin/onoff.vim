@@ -15,11 +15,5 @@ let g:loaded_onoff = 1
 command! -nargs=1 Onoff
       \ call onoff#toggle(<f-args>)
 
-nnore <Plug>(onoff-cursorline) :call onoff#toggle('cursorline')<cr>
-nnore <Plug>(onoff-hlsearch) :call onoff#toggle('hlsearch')<cr>
-nnore <Plug>(onoff-number) :call onoff#toggle('number')<cr>
-nnore <Plug>(onoff-paste) :call onoff#toggle('paste')<cr>
-nnore <Plug>(onoff-spell) :call onoff#toggle('spell')<cr>
-nnore <Plug>(onoff-list) :call onoff#toggle('list')<cr>
 
 " }}}
