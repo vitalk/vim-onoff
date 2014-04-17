@@ -15,5 +15,6 @@ let g:loaded_onoff = 1
 command! -nargs=1 Onoff
       \ call onoff#toggle(<f-args>)
 
+cabbr onoff Onoff
 
 " }}}

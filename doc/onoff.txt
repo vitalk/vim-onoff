@@ -33,7 +33,11 @@ nnore <Leader>s :Onoff spell<cr>
 nnore <Leader>i :Onoff list<cr>
 <
 
+If you want to use :Onoff command explicitly, it's possible to use command
+without capitalization, e.g. :onoff abbreviation is available.
+
                                                                       *:Onoff*
+                                                                      *:onoff*
 :Onoff [option]         Switch value of boolean option and show new value at
                         bottom of the window.
 
