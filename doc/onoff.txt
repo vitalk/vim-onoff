@@ -42,6 +42,9 @@ works only when 'onoff' is the first word on the command line.
 :Onoff [option]         Switch value of boolean option and show new value at
                         bottom of the window.
 
+                        Note: command has autocompletion for all available
+                        boolean options in your Vim distribution.
+
 ==============================================================================
 3. About                                                         *onoff-about*
 

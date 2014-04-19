@@ -12,7 +12,9 @@ let g:loaded_onoff = 1
 " }}}
 " Public API {{{
 
-command! -nargs=1 Onoff
+command! -nargs=1
+      \ -complete=custom,onoff#compfunc
+      \ Onoff
       \ call onoff#toggle(<f-args>)
 
 cabbr onoff <c-r>=(getcmdtype() == ':' && getcmdpos() == 1 ? 'Onoff' : 'onoff')<cr>

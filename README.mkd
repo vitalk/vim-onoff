@@ -20,7 +20,8 @@ nnore <Leader>i :Onoff list<cr>
 
 For those who want to use `:Onoff` command explicitly, `:onoff` abbreviation is
 available. Abbreviation works on when 'onoff' is the first word on the command
-line.
+line. Note that `:Onoff` command has autocompletion for all available boolean
+options supported by your Vim distribution.
 
 Installation
 ------------
