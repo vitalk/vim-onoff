@@ -4,9 +4,10 @@ Vim onoff
 Vim has a lot of different boolean options — `cursorline`, `number`, `list`,
 `spell`, etc. Toggle them *gracefully*.
 
-Much of `onoff.vim` was extracted from my `vimrc`. Plugin provides an API to
-switch boolean options in Vim. After each turn option value shown at bottom of
-the window.
+Plugin provides the `:Onoff` command to switch boolean options in Vim. After
+each turn option value shown at bottom of the window.
+
+Feel free to create a handy aliases for most used options:
 
 ```viml
 nnore <Leader>- :Onoff cursorline<cr>
@@ -16,6 +17,10 @@ nnore <Leader>p :Onoff paste<cr>
 nnore <Leader>s :Onoff spell<cr>
 nnore <Leader>i :Onoff list<cr>
 ```
+
+For those who want to use `:Onoff` command explicitly, `:onoff` abbreviation is
+available. Abbreviation works on when 'onoff' is the first word on the command
+line.
 
 Installation
 ------------
@@ -32,18 +37,6 @@ git clone git://github.com/vitalk/vim-onoff.git
 ```viml
 " Gracefully toggle boolean options in Vim
 Bundle 'vitalk/vim-onoff'
-```
-
-FAQ
----
-
-> My favorite option does not listed here, any way to define it?
-
-Yes, you can toggle **any** options:
-
-```viml
-" Toggle cursor column highlighting
-nnore | :Onoff cursorcolumn<cr>
 ```
 
 Contributing
