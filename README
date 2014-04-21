@@ -1,0 +1,55 @@
+                           // Vim onoff //
+
+                    on/off boolean options in Vim
+
+    ~ What is it?
+
+      Vim has a lot of different boolean options — `cursorline`,
+      `number`, `list`, `spell`, etc. Toggle them *gracefully*.
+
+      Plugin provides the `:Onoff` command to switch boolean options
+      in Vim. After each turn option value shown at bottom of the
+      window.
+
+      Feel free to create a handy aliases for most used options:
+
+      nnore <Leader>n :Onoff number<cr>
+      nnore <Leader>p :Onoff paste<cr>
+      nnore <Leader>s :Onoff spell<cr>
+
+      For those who want to use `:Onoff` command explicitly, `:onoff`
+      abbreviation is available. Abbreviation works on when 'onoff'
+      is the first word on the command line.
+
+      Note that `:Onoff` command has autocompletion for all available
+      boolean options supported by your Vim distribution.
+
+    ~ Installation
+
+      * via pathogen.vim (https://github.com/tpope/vim-pathogen):
+
+      cd ~/.vim/bundle
+      git clone git://github.com/vitalk/vim-onoff.git
+
+      * via Vundle (https://github.com/gmarik/Vundle.vim):
+
+      Bundle 'vitalk/vim-onoff'
+
+    ~ Contributing
+
+      Don't hesitate to create a GitHub Issue
+      (https://github.com/vitalk/vim-onoff/issues) if you have any
+      bugs or suggestions.
+
+    ~ Self-Promotion
+
+      If you enjoy it follow repository on GitHub
+      (https://github.com/vitalk/vim-onoff) and vote for it on vim.org
+      (http://www.vim.org/scripts/script.php?script_id=4323).
+
+    ~ License
+
+      Copyright (c) by Vital Kudzelka.
+
+      Distributed under the same terms as Vim itself.
+      See `:help license`.
