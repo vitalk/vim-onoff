@@ -8,7 +8,7 @@
 On/off Vim options.                                                    *onoff*
 
     1. Intro.....................................|onoff-intro|
-    2. Mappings..................................|onoff-mappings|
+    2. Commands..................................|onoff-commands|
     3. About.....................................|onoff-about|
     4. License...................................|onoff-license|
 
@@ -20,23 +20,30 @@ Plugin provides an API to turn them on/off. After each switch option value
 shown at bottom of the window.
 
 ==============================================================================
-2. Mappings                                                   *onoff-mappings*
+2. Commands                                                   *onoff-commands*
 
-Plugin exposes some |<Plug>| mappings, feel free to remap them to something
-nice:
+Plugin define only one :Onoff command. Feel free to create a handy aliases for
+most used options:
 >
-nmap <Leader>- <Plug>(onoff-cursorline)
-nmap <Leader>h <Plug>(onoff-hlsearch)
-nmap <Leader>n <Plug>(onoff-number)
-nmap <Leader>p <Plug>(onoff-paste)
-nmap <Leader>s <Plug>(onoff-spell)
-nmap <Leader>i <Plug>(onoff-list)
+nnore <Leader>- :Onoff cursorline<cr>
+nnore <Leader>h :Onoff hlsearch<cr>
+nnore <Leader>n :Onoff number<cr>
+nnore <Leader>p :Onoff paste<cr>
+nnore <Leader>s :Onoff spell<cr>
+nnore <Leader>i :Onoff list<cr>
 <
 
-Or map keys explicitly:
->
-nnore | :call onoff#toggle('cursorcolumn')<cr>
-<
+If you want to use :Onoff command explicitly, it's possible to use command
+without capitalization, e.g. :onoff abbreviation is available. Abbreviation
+works only when 'onoff' is the first word on the command line.
+
+                                                                      *:Onoff*
+                                                                      *:onoff*
+:Onoff [option]         Switch value of boolean option and show new value at
+                        bottom of the window.
+
+                        Note: command has autocompletion for all available
+                        boolean options in your Vim distribution.
 
 ==============================================================================
 3. About                                                         *onoff-about*
