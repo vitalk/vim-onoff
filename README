@@ -33,7 +33,7 @@
 
       * via Vundle (https://github.com/gmarik/Vundle.vim):
 
-      Bundle 'vitalk/vim-onoff'
+      Plugin 'vitalk/vim-onoff'
 
     ~ Contributing
 
